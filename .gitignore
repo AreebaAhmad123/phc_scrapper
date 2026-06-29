@@ -1,0 +1,6 @@
+# Ignore local downloaded pdf storage folder
+downloaded_pdfs/
+
+# Ignore any local test environment caches
+__pycache__/
+.vscode/
