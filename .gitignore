@@ -4,3 +4,6 @@ downloaded_pdfs/
 # Ignore any local test environment caches
 __pycache__/
 .vscode/
+.env
+credentials.json
+token.json

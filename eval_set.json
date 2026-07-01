@@ -1,0 +1,92 @@
+[
+  {
+    "id": "EVAL_001",
+    "query": "What is the decision status of Test Case 2?",
+    "expected_case_id": "TEST_CASE_002",
+    "expected_answer_keyword": "Dummy PDF file"
+  },
+  {
+    "id": "EVAL_002",
+    "query": "Who is the petitioner in the case against the Province of KP regarding fundamental rights?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "Muhammad Ali"
+  },
+  {
+    "id": "EVAL_003",
+    "query": "What was the final decision in State vs John Doe?",
+    "expected_case_id": "TEST_CASE_001",
+    "expected_answer_keyword": "State vs John Doe"
+  },
+  {
+    "id": "EVAL_004",
+    "query": "Which legal constitutional section or article is involved in the Peshawar High Court case 2026 PHC 153?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "Article 199"
+  },
+  {
+    "id": "EVAL_005",
+    "query": "Identify the author judge name for the judgment involving case ID TEST_CASE_002.",
+    "expected_case_id": "TEST_CASE_002",
+    "expected_answer_keyword": "State vs ogoe"
+  },
+  {
+    "id": "EVAL_006",
+    "query": "What is the citation journal identifier used for Peshawar High Court judgments?",
+    "expected_case_id": "GLOBAL_METADATA",
+    "expected_answer_keyword": "PHC"
+  },
+  {
+    "id": "EVAL_007",
+    "query": "Who represented the petitioner as an advocate in the constitutional petition 153?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "Mr. X ASC"
+  },
+  {
+    "id": "EVAL_008",
+    "query": "What are the statutes mentioned in the judgment of Muhammad Ali v. Province of KP?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "Constitution of Pakistan"
+  },
+  {
+    "id": "EVAL_009",
+    "query": "What is the total page count recorded for Test Case 2?",
+    "expected_case_id": "TEST_CASE_002",
+    "expected_answer_keyword": "1 page"
+  },
+  {
+    "id": "EVAL_010",
+    "query": "What is the disposition type for case number 2026 PHC 153?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "Petition allowed"
+  },
+  {
+    "id": "EVAL_011",
+    "query": "Which court issued the reported judgment for case file W.P. 1234/2025?",
+    "expected_case_id": "FALLBACK_CASE",
+    "expected_answer_keyword": "Peshawar High Court"
+  },
+  {
+    "id": "EVAL_012",
+    "query": "What is the benchmark strength for the division or single bench in 2026 PHC 153?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "1"
+  },
+  {
+    "id": "EVAL_013",
+    "query": "What precedent case laws were cited in the 2026 PHC index records?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "PLD 2020 SC 1"
+  },
+  {
+    "id": "EVAL_014",
+    "query": "What was the decision date or order date for the Muhammad Ali case?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "2026-05-21"
+  },
+  {
+    "id": "EVAL_015",
+    "query": "Who is the respondent party in the Peshawar High Court citation 153?",
+    "expected_case_id": "2026 PHC 153",
+    "expected_answer_keyword": "Province of KP"
+  }
+]
