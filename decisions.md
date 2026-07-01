@@ -20,3 +20,26 @@
 * **Primary Key (`id`):** Formatted as a string (`PHC_YEAR_SERIAL`) to create a unique indexing signature.
 * **Serial Number (`serial_no`):** Explicitly cast to an **Integer** to allow proper numeric sorting and numerical range queries in database engines.
 * **Temporal Tracking (`decision_date`):** Parsed and standardized into **ISO 8601 format (YYYY-MM-DD)**. This enforces uniformity across historical entries and resolves varied string formats into clean date-time indices. Unresolved or awaited filings default to `null`.
+
+# Decisions & Evaluation Metrics - Stage 3 Advanced Retrieval
+
+This document outlines the experiments, architectural evaluations, and incremental improvements tracking from Stage 2 (Vector Baseline) to Stage 3 (Advanced Search System).
+
+## Evaluation Setup & Metrics Matrix
+* **Dataset Size:** 15 Hand-authored Ground-Truth Judicial Evaluation Pairs (`eval_set.json`).
+* **Primary Metric Measured:** **Hit Rate @ Top-3** (Does the correct context block appear in the top 3 retrieved results?).
+
+| Retrieval Strategy | Hit Rate @ 3 (Score) | Average Latency | Status / Observations |
+| :--- | :---: | :---: | :--- |
+| **Stage 2 Baseline** (Vector Only) | **73.3%** (11/15) | ~45ms | Fast, but misses exact string matches like "2026 PHC 153" due to vector density smoothing. |
+| **Hybrid Search** (Dense Vector + BM25 Keyword) | *Tracking...* | *TBD* | Combines structural semantics with sparse term lookup. |
+| **Optimized Pipeline** (Hybrid + Cross-Encoder Reranker) | *Tracking...* | *TBD* | Deep semantic interactions calculated over top candidate pools. |
+
+---
+
+## Query Classification Matrix
+We defend the definition of "Irrelevant Content" as any inbound request that does not target:
+1. Judicial precedents, case citations, high court operations, or constitutional legal interpretations.
+2. Administrative procedural rules or legal definitions relevant to Pakistani jurisprudence.
+
+All off-domain parameters (e.g., general knowledge, math, coding, creative writing) are caught by the firewall block and rejected at the routing layer without exhausting database connection streams.
